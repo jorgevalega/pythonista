@@ -37,14 +37,12 @@ class Monitor(ABC):
 class MonitorFullHD(Monitor):
     def aumentar_claridade(self, claridade):
         print(f'Aumentando a claridade: {claridade}')
-        # return super().aumentar_claridade(claridade)
-    
+        
     
     
     def diminuir_claridade(self, claridade):
         print(f'Diminuindo a claridade: {claridade}')
-        # return super().diminuir_claridade(claridade)
-    
+        
 monitor_full_hd = MonitorFullHD()
 monitor_full_hd.aumentar_claridade(5)
 monitor_full_hd.diminuir_claridade(3)
