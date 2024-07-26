@@ -38,8 +38,6 @@ class MonitorFullHD(Monitor):
     def aumentar_claridade(self, claridade):
         print(f'Aumentando a claridade: {claridade}')
         
-    
-    
     def diminuir_claridade(self, claridade):
         print(f'Diminuindo a claridade: {claridade}')
         
