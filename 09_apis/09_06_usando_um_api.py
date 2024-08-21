@@ -27,4 +27,4 @@ pprint(resultado_put.json())
 
 # DELETE
 resultado_delete = requests.delete('https://jsonplaceholder.typicode.com/todos/2')
-pprint(resultado_delete.json())
+pprint(resultado_delete.json()) 
