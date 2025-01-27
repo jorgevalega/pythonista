@@ -1,5 +1,3 @@
-from datetime import datetime
-
 # ​PROJETO 1 
 
 ## Objetivo de projeto
@@ -10,29 +8,9 @@ from datetime import datetime
 
 ### Funcionalidades do módulo 1
 
-
 # 1. Obtenha o nome do usuário
-nome_usuario = input('Digite seu nome: ')
 
 # 2. Obtenha a idade do usuário
-data_nascimento_str = input('Insira sua data de nascimento (dd/mm/AAAA): ')
-
-try:
-    data_nascimento = datetime.strptime(data_nascimento_str, '%d/%m/%Y')
-    data_cadastro = datetime.now()
-    idade_usuario = data_cadastro.year - data_nascimento.year
-    if (data_cadastro.month, data_cadastro.day) < (data_nascimento.month, data_nascimento.day):
-        idade_usuario -= 1
-    
-    print(f'{nome_usuario} sua idade é: {idade_usuario} anos')
-except ValueError:
-    print('Formato de data inválido. Por favor, use o formato dd/mm/AAAA')
-
-
-    
-
-
-
 
 # 3. Registre de forma automática a data do cadastro do usuário, usando a data do registro como data de registro
 
@@ -41,7 +19,6 @@ except ValueError:
 # cartoes = ['R$50,00','R$250,00','R$120,00']
 
 # 5. Guarde informações sobre a data de aniversário do funcionário(dd/mm/aaaa)
-
 
 
 
@@ -55,3 +32,18 @@ Usando os dados obtidos no módulo 1, exiba as seguintes informações:
 
 Parabéns, houve um sorteio e você ganhou um cartão de compras no valor de (valor sorteado).
 '''
+from datetime import datetime
+
+nome_usuario = input('Digite seu nome: ')
+data_nascimento_str = input('Insira sua data de nascimento (dd/mm/AAAA): ')
+
+try:
+    data_nascimento = datetime.strptime(data_nascimento_str, '%d/%m/%Y')
+    data_cadastro = datetime.now()
+    idade_usuario = data_cadastro.year - data_nascimento.year
+    if (data_cadastro.month, data_cadastro.day) < (data_nascimento.month, data_nascimento.day):
+        idade_usuario -= 1
+    
+    print(f'{nome_usuario} sua idade é: {idade_usuario} anos')
+except ValueError:
+    print('Formato de data inválido. Por favor, use o formato dd/mm/AAAA')
