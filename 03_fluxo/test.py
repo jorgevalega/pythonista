@@ -1,17 +1,12 @@
-x = [1, 2, 3]
+def decorador(func):
+    def envoltura(*args, **kwargs):
+        print(f"Llamando a {func.__name__} con argumentos {args} {kwargs}")
+        return func(*args, **kwargs)
+    return envoltura
 
-y = x 
+@decorador
+def sumar(a, b):
+    return a + b
 
-y[1] = 5
-
-print(f'y = {y}')
-print(f'x = {x}')
-
-a = [1, 2, 3]
-
-b = a.copy()
-
-b[1] = 5
-
-print(f'a = {a}')
-print(f'b = {b}')
+resultado = sumar(3, 4)
+print(f"Resultado: {resultado}")
