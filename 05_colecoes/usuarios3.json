@@ -1,0 +1,24 @@
+{
+    "usuarios": [
+        {
+            "nome": "Jorge",
+            "telefone": "47-98465-5408",
+            "permissões": [
+                "basico",
+                "intermediário",
+                "administrador"
+        
+            ],
+            "admin": true
+        },
+        {
+            "nome": "Raquel",
+            "telefone": "47-98465-2552",
+            "permissões": [
+                "basico",
+                "intermediário"        
+            ],
+            "admin": false
+        }    
+    ]
+}
