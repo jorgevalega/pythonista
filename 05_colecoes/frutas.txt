@@ -1,0 +1,11 @@
+Banana
+Melancia
+Maçã
+Laranja
+Limão
+
+Amarelo
+Verde
+Marrão
+Azul
+Vermelho
