@@ -1,3 +1,6 @@
-INFO - jorgevalega@gmail.com entrou em sua conta banc�ria
-INFO - invalid literal for int() with base 10: 'kkkkk'
-INFO - invalid literal for int() with base 10: 'jkljkl' - 2024-07-14 00:15:26,891
+
+DEBUG - Logging no nível debug
+INFO - Logging no nível info
+WARNING - Logging no nível warning
+ERROR - Logging no nível error
+CRITICAL - Logging no nível critical
